@@ -11,7 +11,6 @@ $(function () {
     var div = $("<div></div>");
     div.append("<h3> Your total bill with tip is: $" + total + "</h3>")
       .append("<h3>Your tip comes to: $" + tip + "</h3>")
-      // .append("<button class = 'btn btn-default'id ='Reset' type ='reset'>Clear</button>");
     $(".returntip").append(div);
 
     if (bill == 0) {
@@ -22,6 +21,11 @@ $(function () {
       alert("Error Please Enter Valid Number"
       )
       return null;
+    }
+    else if($("#Split").val() > 1){
+      var yourShare = (parseFloat(bill) + parseFloat(tip))/(parseInt(people)).toFixed(2);
+      $(".returntip").append("<h3> Your share of the bill will be: $"+yourShare.toFixed(2)+"</h3>")
+      return false;
     }
     else {
       return false;

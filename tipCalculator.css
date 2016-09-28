@@ -1,10 +1,11 @@
 body{
-background-image: url("https://a.disquscdn.com/get?url=http%3A%2F%2Fcravedujour.com%2Fwp-content%2Fuploads%2F2014%2F03%2Frestaurant-tip.jpg&key=L8afX53g1mPKt5Pl7y6wyQ");
+background-image: url("http://www.cheatsheet.com/wp-content/uploads/2015/07/Money1.png");
 background-size: cover;
 }
 
 .inputs{
     background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png");
+    background-size: cover;
     margin:auto;
     margin-top:90px;
     padding-left:10em;
@@ -12,6 +13,7 @@ background-size: cover;
     text-align:center;
     width:50%;
     border-radius: 15px;
+    height: 600px;
 };
 
 
